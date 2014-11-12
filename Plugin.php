@@ -83,7 +83,7 @@ class Plugin extends AbstractPlugin implements PluginInterface
             $script->setAttribute('type', 'text/javascript');
 
             $last_index = count($args['button']->getChildren()) - 1;
-            $args['button']->addChildAt($script, $last_index - 1);
+            $args['button']->addChildAt($script, $last_index);
         }
     }
 
