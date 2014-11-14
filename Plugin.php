@@ -38,6 +38,26 @@ use Mibew\Plugin\PluginInterface;
 class Plugin extends AbstractPlugin implements PluginInterface
 {
     /**
+     * List of the plugin configs.
+     *
+     * @var array
+     */
+    protected $config;
+
+    /**
+     * Class constructor.
+     *
+     * @param array $config List of the plugin config. The following options are
+     * supported:
+     *   - 'refresh_frequency': int, time in seconds between button refreshes.
+     *     The default value is 3.
+     */
+    public function __construct($config)
+    {
+        $this->config = $config + array('refresh_frequency' => 3);
+    }
+
+    /**
      * The plugin does not need extra initialization thus it is always ready to
      * work.
      *
@@ -79,7 +99,7 @@ class Plugin extends AbstractPlugin implements PluginInterface
         if ($args['generator'] instanceof ImageGenerator) {
             // Only image buttons should be refreshed
             $script = HTML5\html('script');
-            $script->addChild($this->buildRefreshJs(3));
+            $script->addChild($this->buildRefreshJs($this->config['refresh_frequency']));
             $script->setAttribute('type', 'text/javascript');
 
             $last_index = count($args['button']->getChildren()) - 1;

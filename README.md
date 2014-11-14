@@ -14,7 +14,22 @@ If the "plugins" stucture looks like `plugins: []` it will become:
 plugins:
     -
         name: "Mibew:ButtonRefresh"
+        config: # Plugin's configurations are described below
+            refresh_frequency: 3
 ```
+
+
+## Plugin's configurations
+
+The plugin can be configured with values in "`<Mibew root>`/configs/config.yml" file.
+
+### config.ignore_emoticons
+
+Type: `Integer`
+
+Default: `3`
+
+Specify time in seconds between button refreshes. This value is optional and can be skipped.
 
 
 ## Build from sources
