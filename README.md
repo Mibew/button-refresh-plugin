@@ -6,17 +6,19 @@ It make the button refresents actual operator's state.
 ## Installation
 
 1. Get the archive with the plugin sources. At the moment the only option is to build the plugin from sources.
+
 2. Untar/unzip the plugin's archive.
+
 3. Put files of the plugins to the `<Mibew root>/plugins`  folder.
-4. Add plugins definition to "plugins" structure in "`<Mibew root>`/configs/config.yml".
-If the "plugins" stucture looks like `plugins: []` it will become:
-```yaml
-plugins:
-    -
-        name: "Mibew:ButtonRefresh"
-        config: # Plugin's configurations are described below
+
+4. (optional) Add plugins configs to "plugins" structure in "`<Mibew root>`/configs/config.yml". If the "plugins" stucture looks like `plugins: []` it will become:
+    ```yaml
+    plugins:
+        "Mibew:ButtonRefresh": # Plugin's configurations are described below
             refresh_frequency: 3
-```
+    ```
+
+5. Navigate to "`<Mibew Base URL>`/operator/plugin" page and enable the plugin.
 
 
 ## Plugin's configurations
