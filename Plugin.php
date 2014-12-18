@@ -126,7 +126,7 @@ class Plugin extends AbstractPlugin implements PluginInterface
     protected function buildRefreshJs($time)
     {
         $js = '(function() {'
-            . 'var img = document.getElementById("mibewAgentButton").getElementsByTagName("img")[0];'
+            . 'var img = document.getElementById("mibew-agent-button").getElementsByTagName("img")[0];'
             . 'var originalSrc = img.src;'
             . 'setInterval(function() {'
                 . 'img.src = originalSrc + "&dummy=" + (new Date()).getTime();'
