@@ -20,6 +20,10 @@ It make the button refresents actual operator's state.
 
 5. Navigate to "`<Mibew Base URL>`/operator/plugin" page and enable the plugin.
 
+6. Regenerate button at "`<Mibew Base URL>`/operator/button-code" page.
+
+Beware that when the plugin will be disabled or uninstalled the button MUST be regenerated.
+
 
 ## Plugin's configurations
 
