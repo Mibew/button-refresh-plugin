@@ -25,7 +25,7 @@ It make the button refresents actual operator's state.
 
 The plugin can be configured with values in "`<Mibew root>`/configs/config.yml" file.
 
-### config.ignore_emoticons
+### config.refresh_frequency
 
 Type: `Integer`
 
