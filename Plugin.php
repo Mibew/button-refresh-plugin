@@ -88,17 +88,6 @@ class Plugin extends AbstractPlugin implements PluginInterface
     }
 
     /**
-     * Specify dependencies of the plugin.
-     *
-     * @return array List of dependencies
-     */
-    public static function getDependencies()
-    {
-        // This plugin does not depend on others so return an empty array.
-        return array();
-    }
-
-    /**
      * A handler for
      * {@link \Mibew\EventDispatcher\Events::BUTTON_GENERATE} event.
      *
