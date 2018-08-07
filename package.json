@@ -1,6 +1,6 @@
 {
     "name": "button-refresh-plugin",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A plugin for Mibew that makes the button represents the actual operators state.",
     "private": true,
     "bugs": {

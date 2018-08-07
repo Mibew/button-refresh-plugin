@@ -27,15 +27,14 @@ use Canteen\HTML5;
 use Mibew\Button\Generator\ImageGenerator;
 use Mibew\EventDispatcher\EventDispatcher;
 use Mibew\EventDispatcher\Events;
-use Mibew\Plugin\AbstractPlugin;
-use Mibew\Plugin\PluginInterface;
+use Mibew\Plugin\PluginManager;
 
 /**
  * The main plugin's file definition.
  *
  * It only attaches handlers to some events.
  */
-class Plugin extends AbstractPlugin implements PluginInterface
+class Plugin extends \Mibew\Plugin\AbstractPlugin implements \Mibew\Plugin\PluginInterface
 {
     /**
      * List of the plugin configs.
