@@ -2,10 +2,12 @@
 
 It make the button refresents actual operator's state.
 
+NB.: Actually the plugin adjusts the button generation process. So if you want to disable autorefresh of the button, it's not enough to only disable the plugin. One should also regenerate the button afterwards.
+
 
 ## Installation
 
-1. Get the archive with the plugin sources. At the moment the only option is to build the plugin from sources.
+1. Get the archive with the plugin sources. You can download it from the [official site](https://mibew.org/plugins#mibew-open-street-map) or build the plugin from sources.
 
 2. Untar/unzip the plugin's archive.
 
@@ -22,7 +24,7 @@ It make the button refresents actual operator's state.
 
 6. Regenerate button at "`<Mibew Base URL>`/operator/button-code" page.
 
-Beware that when the plugin will be disabled or uninstalled the button MUST be regenerated.
+Beware that when the plugin will be disabled or uninstalled the button **MUST** be regenerated.
 
 
 ## Plugin's configurations
